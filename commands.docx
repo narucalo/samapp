@@ -1,0 +1,30 @@
+add in verbose error handlings and logging for every steps. It needs to print out each stage the test pass or fail. 
+Streamline the test code and apply programing principles. 
+
+
+
+
+
+python -m unittest test_main.py
+
+python -m pip install --upgrade pip
+
+python --version
+
+conda clean --all -y
+
+conda activate face-python39
+
+conda remove --name face --all
+
+conda create --name face python=3.11
+
+conda install -c conda-forge mediapipe
+
+python -m unittest utils_test.py
+
+nvidia-smi # Reveal GPU
+
+wmic cpu get name # Reveal cpu
+
+pip freeze > requirements.txt

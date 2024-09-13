@@ -1,0 +1,58 @@
+{
+  "acupoints": [
+    {
+      "name": "YinTang",
+      "reference": "Nose",
+      "offset": [0, -50],
+      "meridian": "GV"
+    },
+    {
+      "name": "TaiYang",
+      "reference": "id_473",
+      "offset": [-40, 0],
+      "meridian": "ST"
+    },
+    {
+      "name": "ShenTing",
+      "reference": "id_54",
+      "offset": [0, -50],
+      "meridian": "GV"
+    },
+    {
+      "name": "SiBai",
+      "reference": "id_464",
+      "offset": [0, -2],
+      "meridian": "ST"
+    },
+    {
+      "name": "ChengJiang",
+      "reference": "id_0",
+      "offset": [0, 20],
+      "meridian": "CV"
+    },
+    {
+      "name": "JingMing",
+      "reference": "id_1",
+      "offset": [10, 0],
+      "meridian": "BL"
+    },
+    {
+      "name": "BaiHui",
+      "reference": "id_10",
+      "offset": [0, -10],
+      "meridian": "GV"
+    },
+    {
+      "name": "FengChi",
+      "reference": "id_275",
+      "offset": [0, 0],
+      "meridian": "GB"
+    },
+    {
+      "name": "ErJian",
+      "reference": "Ear_Top",
+      "offset": [0, 10],
+      "meridian": "SJ"
+    }
+  ]
+}
