@@ -1,52 +1,55 @@
-# Acupoint AR
+# SAMAPP - Getting Started Guide
 
-Acupoint AR is an augmented reality application that detects and visualizes acupuncture points on the face in real-time. It uses advanced facial detection, alignment, and segmentation to accurately locate acupoints, leveraging the B-cun proportional measurement method for precision.
+Welcome to **SAMAPP**, an application designed for ease of use. This guide will help you set up and run the app on your MacBook Air. Follow the steps below carefully, and you’ll have the app running in no time!
 
-## Features
+---
 
-- Real-time facial landmark detection using ARKit (iOS) and ARCore (Android).
-- Facial segmentation and acupoint visualization.
-- 3D rendering of acupoints using Three.js.
-- Supports both iOS and Android platforms.
-- Camera-based pressure detection on facial regions.
+## Requirements
+1. **MacBook Air** with macOS installed.
+2. **Internet connection** to download the necessary tools and files.
 
-## Technology Stack
+---
 
-- **Framework:** React Native
-- **AR (iOS):** ARKit
-- **AR (Android):** ARCore
-- **Face Tracking:** TensorFlow Lite / OpenCV
-- **Camera Access:** React Native Camera
-- **3D Rendering:** Three.js
-- **User Interaction:** React Native Gesture Handler
+## Step-by-Step Instructions
 
-## Installation
+### Step 1: Open Terminal
 
-### Clone the repository:
+1. Click on the **Spotlight Search** (the magnifying glass in the top-right corner of your screen).
+2. Type `Terminal` and hit **Enter**.
+3. Terminal will open as a window with a command prompt.
+
+---
+
+### Step 2: Navigate to the samapp Folder
+
+1. **If the samapp folder is on the Desktop**, type the following command and press **Enter**:
+
+    ```bash
+    cd ~/Desktop/samapp
+    ```
+
+2. **If the samapp folder is in Downloads**, type the following command and press **Enter**:
+
+    ```bash
+    cd ~/Downloads/samapp
+    ```
+
+---
+
+### Step 3: Make the Script Executable
+
+Once you're inside the `samapp` folder where the `run_samapp.sh` script is located, type the following command and press **Enter**:
 
 ```bash
-git clone https://github.com/narucalo/acupoints.git
+chmod +x run_samapp.sh
 
-npm install
-
-Run on iOS:
-npx react-native run-ios
-
-Run on Android:
-npx react-native run-android
-
-Usage
-Open the app and allow camera access.
-The app will detect your face and overlay acupoints on the screen.
-You can interact with the points to get more information or adjust the display.
-Project Structure
-src/components: Contains reusable UI components.
-src/screens: Contains different screens of the app.
-src/assets: Stores image assets, icons, and other static files.
-src/styles: Centralized location for styling (using TailwindCSS).
-src/utils: Helper functions and utilities.
+Step 4: Run the Script
+./run_samapp.sh
 
 
-This template provides a good starting point. You can add more details specific to your project as needed!
+What the Script Does:
+It checks if Docker is installed on your Mac.
+If Docker is not installed, it will automatically download and install it for you.
+It pulls the latest version of samapp from the internet.
+It runs the samapp application and makes it available on your browser.
 
-pip install -r requirements.txt
